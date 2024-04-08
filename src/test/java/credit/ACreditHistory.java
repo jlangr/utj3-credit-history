@@ -1,4 +1,4 @@
-package scorecollection;
+package credit;
 
 // START_HIGHLIGHT
 import org.junit.jupiter.api.BeforeEach;
