@@ -1,4 +1,4 @@
-package scorecollection;
+package credit;
 
 class ACreditHistory {
    // START_HIGHLIGHT

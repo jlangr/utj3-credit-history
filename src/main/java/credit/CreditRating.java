@@ -1,4 +1,4 @@
-package scorecollection;
+package credit;
 
 import java.time.LocalDate;
 
