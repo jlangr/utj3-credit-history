@@ -1,5 +1,5 @@
 // START:all
-package scorecollection;
+package credit;
 
 import java.time.LocalDate;
 import java.time.Month;
