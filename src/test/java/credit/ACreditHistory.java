@@ -1,5 +1,6 @@
 package credit;
 
+// START:test
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
@@ -42,3 +43,4 @@ class ACreditHistory {
       assertEquals(800, result);
    }
 }
+// END:test
