@@ -1,5 +1,6 @@
 package credit;
 
+// START:test
 // START_HIGHLIGHT
 import org.junit.jupiter.api.BeforeEach;
 // END_HIGHLIGHT
@@ -35,3 +36,4 @@ class ACreditHistory {
       assertEquals(780, result);
    }
 }
+// END:test
