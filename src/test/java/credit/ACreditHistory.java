@@ -14,26 +14,17 @@ class ACreditHistory {
       creditHistory = new CreditHistory();
    }
 
-   // START:zero
    @Test
    void withNoCreditRatingsHas0Mean() {
       int result = creditHistory.arithmeticMean();
 
       assertEquals(0, result);
    }
-   // END:zero
 
    @Test
-   void withOneRatingHasEquivalentMean() {
-      creditHistory.add(new CreditRating(780, LocalDate.now()));
-
-      int result = creditHistory.arithmeticMean();
-
-      assertEquals(780, result);
-   }
-
-   @Test
-   void withMultipleRatingsDividesTotalByCount() {
+   // START_HIGHLIGHT
+   void withRatingsDividesTotalByCount() {
+      // END_HIGHLIGHT
       creditHistory.add(new CreditRating(780, LocalDate.now()));
       creditHistory.add(new CreditRating(800, LocalDate.now()));
       creditHistory.add(new CreditRating(820, LocalDate.now()));
