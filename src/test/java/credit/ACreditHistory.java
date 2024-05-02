@@ -8,7 +8,7 @@ class ACreditHistory {
    @Test
    void withNoCreditRatingsHas0Mean() {
       var creditHistory = new CreditHistory();
-      int result = creditHistory.arithmeticMean();
+      var result = creditHistory.arithmeticMean();
       assertEquals(0, result);
    }
    // END:zero
