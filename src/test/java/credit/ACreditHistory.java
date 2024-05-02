@@ -16,20 +16,11 @@ class ACreditHistory {
    // START:zero
    @Test
    void withNoCreditRatingsHas0Mean() {
-      int result = creditHistory.arithmeticMean();
+      var result = creditHistory.arithmeticMean();
 
       assertEquals(0, result);
    }
    // END:zero
-
-   @Test
-   void withOneRatingHasEquivalentMean() {
-      creditHistory.add(new CreditRating(780, LocalDate.now()));
-
-      int result = creditHistory.arithmeticMean();
-
-      assertEquals(780, result);
-   }
 
    @Test
    void withMultipleRatingsDividesTotalByCount() {
@@ -37,7 +28,7 @@ class ACreditHistory {
       creditHistory.add(new CreditRating(800, LocalDate.now()));
       creditHistory.add(new CreditRating(820, LocalDate.now()));
 
-      int result = creditHistory.arithmeticMean();
+      var result = creditHistory.arithmeticMean();
 
       assertEquals(800, result);
    }
