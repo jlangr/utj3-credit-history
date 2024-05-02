@@ -17,7 +17,7 @@ class ACreditHistory {
    // START:zero
    @Test
    void withNoCreditRatingsHas0Mean() {
-      int result = creditHistory.arithmeticMean();
+      var result = creditHistory.arithmeticMean();
 
       assertEquals(0, result);
    }
@@ -31,7 +31,7 @@ class ACreditHistory {
       creditHistory.add(new CreditRating(800, LocalDate.now()));
       creditHistory.add(new CreditRating(820, LocalDate.now()));
 
-      int result = creditHistory.arithmeticMean();
+      var result = creditHistory.arithmeticMean();
 
       assertEquals(800, result);
    }
