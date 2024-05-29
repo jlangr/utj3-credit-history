@@ -20,12 +20,11 @@ public class CreditHistory {
 
    // START:main
    public static void main(String[] args) {
-      var start = LocalDate.of(2025, Month.JANUARY, 1);
       var collection = new CreditHistory();
-      collection.add(new CreditRating(745, start));
-      collection.add(new CreditRating(714, start.plusDays(1)));
-      collection.add(new CreditRating(758, start.plusDays(2)));
-      collection.add(new CreditRating(805, start.plusDays(3)));
+      collection.add(new CreditRating(745));
+      collection.add(new CreditRating(714));
+      collection.add(new CreditRating(758));
+      collection.add(new CreditRating(805));
 
       System.out.println("average: " + collection.arithmeticMean());
    }
