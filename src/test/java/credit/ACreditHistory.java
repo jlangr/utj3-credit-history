@@ -5,7 +5,6 @@ package credit;
 import org.junit.jupiter.api.BeforeEach;
 // END_HIGHLIGHT
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ACreditHistory {
@@ -29,7 +28,7 @@ class ACreditHistory {
 
    @Test
    void withOneRatingHasEquivalentMean() {
-      creditHistory.add(new CreditRating(780, LocalDate.now()));
+      creditHistory.add(new CreditRating(780));
 
       var result = creditHistory.arithmeticMean();
 
