@@ -22,7 +22,7 @@ class ACreditHistory {
 
    @Test
    void withOneRatingHasEquivalentMean() {
-      creditHistory.add(new CreditRating(780, LocalDate.now()));
+      creditHistory.add(new CreditRating(780));
 
       var result = creditHistory.arithmeticMean();
 
@@ -32,9 +32,9 @@ class ACreditHistory {
    // START:manyTest
    @Test
    void withMultipleRatingsDividesTotalByCount() {
-      creditHistory.add(new CreditRating(780, LocalDate.now()));
-      creditHistory.add(new CreditRating(800, LocalDate.now()));
-      creditHistory.add(new CreditRating(820, LocalDate.now()));
+      creditHistory.add(new CreditRating(780));
+      creditHistory.add(new CreditRating(800));
+      creditHistory.add(new CreditRating(820));
 
       var result = creditHistory.arithmeticMean();
 
