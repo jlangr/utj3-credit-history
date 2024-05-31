@@ -16,7 +16,7 @@ class ACreditHistory {
 
    // START:zero
    @Test
-   void withNoCreditRatingsHas0Mean() {
+   void withNoCreditRatingsThrows() {
       assertThrows(IllegalStateException.class,
          () -> creditHistory.arithmeticMean());
    }
